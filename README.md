@@ -17,7 +17,7 @@ Reactアプリケーションを作成するためにターミナルで以下の
 
 npx create-react-app react-app
 
-今回は、プロジェク名をreact-appします。
+今回は、プロジェク名をreact-appにします。
 
 ### プロジェクト内に移動
 
