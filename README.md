@@ -28,16 +28,13 @@ cd react-appで先ほど任意の名前で作成したディレクトリに移�
 先ほど作成したreact-appの中のsrcにDockerfileを作成し以下を貼り付ける。
 
 FROM node:20-alpine
-
 ENV NODE_ENV=development
 
 
 WORKDIR /usr/src/app
-
 COPY package.json package-lock.json .
 
 RUN npm install
-
 
 COPY . .
 
