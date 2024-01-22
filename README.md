@@ -68,10 +68,3 @@ cd react-appで先ほど任意の名前で作成したディレクトリに移�
 docker compose up --build -d
 
 localhost:3000にアクセスして、画像が出たらOK。
-
-### コンテナの作成と立ち上げ
-
-ターミナルで以下を入力
-docker compose up --build -d
-
-localhost:3000にアクセスして、画像が出たらOK。
