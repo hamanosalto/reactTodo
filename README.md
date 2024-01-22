@@ -1,5 +1,5 @@
 # はじめに
-dokerで環境を構築しreactを使いTodoアプリを作成します。
+dokerで環境を構築しreactを使いTodoアプリを作成します。　
 ・あらかじめDockerとnode.jsとnpmをインストールしておきます。
 
 ## 手順
