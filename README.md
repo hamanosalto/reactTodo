@@ -21,7 +21,7 @@ npx create-react-app react-app
 
 ### プロジェクト内に移動
 
-cd react-appで先ほど任意の名前で作成したディレクトリに移動します。
+cd react-appで先ほど作成したディレクトリに移動します。
 
 ### Dockerfileの作成
 
