@@ -23,6 +23,24 @@ npx create-react-app react-app
 
 cd react-appで先ほど任意の名前で作成したディレクトリに移動します。
 
+### Dockerfileの作成
+
+先ほど作成したreact-appの中のsrcにDockerfileを作成し以下を貼り付ける。
+
+FROM node:20-alpine
+
+ENV NODE_ENV=development
+
+
+WORKDIR /usr/src/app
+
+COPY package.json package-lock.json .
+
+RUN npm install
+
+
+COPY . .
+
 ### コンテナの作成と立ち上げ
 
 ターミナルで以下を入力
