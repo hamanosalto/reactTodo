@@ -27,40 +27,40 @@ cd react-appで先ほど任意の名前で作成したディレクトリに移�
 
 先ほど作成したreact-appの中のsrcにDockerfileを作成し以下を貼り付ける。
 
-FROM node:20-alpine
-
-ENV NODE_ENV=development
-
-WORKDIR /usr/src/app
-
-COPY package.json package-lock.json .
-
-RUN npm install
-
-COPY . .
+    FROM node:20-alpine
+    
+    ENV NODE_ENV=development
+    
+    WORKDIR /usr/src/app
+    
+    COPY package.json package-lock.json .
+    
+    RUN npm install
+    
+    COPY . .
 
 
 ### docker-compose.ymlの作成
 
 先ほど作成したreact-appの中のsrcにdocker-compose.ymlを作成し以下を貼り付ける
 
-version: "3"
-
-services:
-
-  react-app: #サービス名
-  
-    build: .
+    version: "3"
     
-    volumes: #バインドマウント
+    services:
     
-      - ./:/usr/src/app
+      react-app: #サービス名
       
-    command: npm start
-    
-    ports:
-    
-      - "3000:3000"
+        build: .
+        
+        volumes: #バインドマウント
+        
+          - ./:/usr/src/app
+          
+        command: npm start
+        
+        ports:
+        
+          - "3000:3000"
 
 ### コンテナの作成と立ち上げ
 
