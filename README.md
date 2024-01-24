@@ -1,5 +1,5 @@
 # はじめに
-dokerで環境を構築しreactを使いTodoアプリを作成します。
+dokerで開発環境を構築し、reactを使いTodoアプリを作成します。
 
 ・dockerを以下からダウンロード
 
